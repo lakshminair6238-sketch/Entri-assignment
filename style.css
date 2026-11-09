@@ -1,0 +1,258 @@
+/* Custom Styling for The Velvet Cafe - Purple Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F5FA;
+    color: #3B323F;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+/* --- Header / Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: #F8F5FA;
+    border-bottom: 1px solid #E8E0EE;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #3A1C59;
+    letter-spacing: 1px;
+}
+
+.logo .tagline {
+    font-size: 11px;
+    color: #7A5C99;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #3B323F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #6B2D91;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 85px 20px;
+    background-color: #EFE7F5;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.welcome-badge {
+    color: #6B2D91;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 52px);
+    color: #3A1C59;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero-p {
+    color: #5E5066;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3A1C59;
+    color: #F8F5FA;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6B2D91;
+}
+
+/* --- About Us Section --- */
+.about {
+    background-color: #FFFFFF;
+    margin: 50px auto;
+    max-width: 850px;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #E8E0EE;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #3A1C59;
+    margin-bottom: 8px;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background-color: #6B2D91;
+    margin: 0 auto 18px auto;
+}
+
+.about p {
+    color: #5E5066;
+    font-size: 14.5px;
+    line-height: 1.8;
+}
+
+/* --- Menu Section --- */
+.menu-section {
+    padding: 60px 7%;
+    background-color: #F8F5FA;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #3A1C59;
+    margin-bottom: 6px;
+}
+
+.section-title p {
+    color: #7A5C99;
+    font-size: 14px;
+}
+
+.menu-category {
+    margin-bottom: 50px;
+}
+
+.category-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #3A1C59;
+    margin-bottom: 22px;
+    border-left: 4px solid #6B2D91;
+    padding-left: 12px;
+}
+
+/* Card Layout Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #E8E0EE;
+    box-shadow: 0 4px 10px rgba(58, 28, 89, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-details h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    color: #3A1C59;
+    margin-bottom: 8px;
+}
+
+.card-details p {
+    color: #5E5066;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 700;
+    color: #6B2D91;
+    font-size: 15px;
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #3A1C59;
+    color: #F8F5FA;
+    padding: 50px 7% 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-box h3, .footer-box h4 {
+    font-family: 'Playfair Display', serif;
+    color: #EFE7F5;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.footer-box p {
+    font-size: 13px;
+    color: #D6CCE0;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(239, 231, 245, 0.2);
+    padding-top: 20px;
+    font-size: 12px;
+    color: #D6CCE0;
+}
